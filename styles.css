@@ -1,0 +1,228 @@
+body {
+margin: 0;
+text-align: center;
+font-family:'Comfortaa', cursive;
+font-size: 150%;
+color:black;
+background-color: #E8F9FD;
+}
+
+/* navigation bar */
+
+nav {
+  display: flex;
+  justify-content:flex-start;
+}
+
+.nav-btn {
+  padding-top: 10px;
+}
+
+h1 {
+  font-size:6vw;
+  font-family:'Dancing Script', cursive;
+  margin-top: 0;
+}
+
+h2 {
+  font-size:2vw;
+}
+
+
+p {
+  font-size:1.5vw;
+}
+
+hr {
+  border-style: none;
+  border-top-style: dotted;
+  border-color: #A6D1E6;
+  border-width: 5px;
+  width:5%;
+  padding: 5px;
+}
+
+/* Błekitny container */
+.top-container {
+  padding-top: 20px;
+}
+
+.top-cloud {
+  position: relative;
+  margin-right:180px;
+  top:150px;
+  width:10vw;
+}
+
+.bottom-cloud {
+  position: relative;
+  margin-left:150px;
+  width:10vw;
+}
+
+
+/* Beżowy container */
+.middle-container {
+  background-color: white;
+  padding-top: 30px;
+}
+
+.me {
+  width:10vw;
+  border-radius: 50%;
+}
+
+.intro {
+  width: 60%;
+  margin:auto;
+  padding-bottom: 40px;
+}
+
+.skills {
+  padding-top: 25px;
+}
+
+.skill {
+  width: 10%;
+}
+
+
+td {
+  font-size: 1.5vw;
+}
+
+
+.skill-row {
+  width: 60%;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+.ambitious {
+  width: 6vw;
+}
+
+.friendly {
+  width: 6vw;
+}
+
+.creative {
+  width: 6vw;
+}
+
+
+.koperta {
+  width: 10vw;
+  padding-top: 30px;
+}
+
+/*button*/
+
+.btn {
+  padding: 8px;
+  font-size: 20px;
+  font-family:'Comfortaa', cursive;
+  border: none;
+  outline: none;
+  background: #82AAE3;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 900px) {
+  .btn {
+    width: 100px;
+    font-size: 10px;
+    height: 30px;
+  }
+}
+
+.btn::before {
+  position: absolute;
+  content: "";
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  left: -2px;
+  top: -2px;
+  background: linear-gradient(
+    124deg,
+    #ff2400,
+    #e81d1d,
+    #e8b71d,
+    #e3e81d,
+    #1de840,
+    #1ddde8,
+    #2b1de8,
+    #dd00f3,
+    #dd00f3
+  );
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  animation: move 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.btn:hover::before {
+  opacity: 1;
+}
+
+.btn::after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #5189ad;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes move {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+
+
+/* Błekitny container */
+
+.bottom-container {
+  background-color: #E8F9FD;
+  margin-bottom: 0;
+  margin-top:35px;
+  padding-top: 3%;
+  font-family:'Comfortaa', cursive;
+  font-size: 2vw;
+}
+
+a {
+  margin:10px 30px;
+  text-decoration: none;
+  font-size: 1.5vw;
+  color: #3A4F7A;
+  }
+
+a:hover {
+color: #0A2647;
+}
+
+.foot {
+  line-height: 7;
+  margin-bottom: 0;
+  font-size: 1vw;
+}
