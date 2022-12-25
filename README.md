@@ -1,4 +1,4 @@
 # About me website
 
-Click below:
+Click here:
 https://jklaudia28.github.io/About-me-website/
